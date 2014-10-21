@@ -35,7 +35,12 @@ namespace StateManager {
         }
 
         public void PushState(State state) {
+            InitState(state);
             stateQueue.Enqueue(() => stateStack.Push(state));
+        }
+
+        private void InitState(State state) {
+            state.StateManager = this;
         }
 
         public void ChangeState() {

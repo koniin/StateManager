@@ -1,10 +1,6 @@
 ﻿namespace StateManager {
     public abstract class State {
-        protected StateManager stateManager;
-
-        protected State(StateManager stateManager) {
-            this.stateManager = stateManager;
-        }
+        public StateManager StateManager { get; set; }
 
         // the bool return value marks if its fall through or not
         public abstract bool Update(float deltaTime);

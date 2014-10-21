@@ -2,8 +2,6 @@ using System;
 
 namespace StateManager {
     public class MenuState : State {
-        public MenuState(StateManager stateManager) : base(stateManager) {}
-
         public override bool Update(float deltaTime) {
             return false;
         }
@@ -15,11 +13,11 @@ namespace StateManager {
 
         public override void HandleInput(string key) {
             if (key == "g") {
-                stateManager.PopState();
-                stateManager.PushState(new GameState(stateManager));
+                StateManager.PopState();
+                StateManager.PushState(new GameState());
             }
             if (key == "q") {
-                stateManager.PopState();
+                StateManager.PopState();
             }
         }
     }

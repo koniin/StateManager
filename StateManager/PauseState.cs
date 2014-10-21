@@ -2,8 +2,6 @@
 
 namespace StateManager {
     public class PauseState : State {
-        public PauseState(StateManager stateManager) : base(stateManager) {}
-
         public override bool Update(float deltaTime) {
             return false;
         }
@@ -15,11 +13,11 @@ namespace StateManager {
 
         public override void HandleInput(string key) {
             if (key == "p") {
-                stateManager.PopState();
+                StateManager.PopState();
             }
             if (key == "q") {
-                stateManager.PopState();
-                stateManager.PopState();
+                StateManager.PopState();
+                StateManager.PopState();
             }
         }
     }

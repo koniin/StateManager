@@ -9,7 +9,7 @@ namespace StateManager {
     internal class Program {
         private static void Main(string[] args) {
             StateManager stateManager = new StateManager();
-            stateManager.PushState(new MenuState(stateManager));
+            stateManager.PushState(new MenuState());
 
             bool gameIsRunning = true;
             while (gameIsRunning) {
