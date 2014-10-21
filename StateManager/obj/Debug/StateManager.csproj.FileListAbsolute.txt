@@ -1,0 +1,6 @@
+C:\Code\StateManager\StateManager\bin\Debug\StateManager.exe.config
+C:\Code\StateManager\StateManager\obj\Debug\StateManager.csprojResolveAssemblyReference.cache
+C:\Code\StateManager\StateManager\bin\Debug\StateManager.exe
+C:\Code\StateManager\StateManager\bin\Debug\StateManager.pdb
+C:\Code\StateManager\StateManager\obj\Debug\StateManager.exe
+C:\Code\StateManager\StateManager\obj\Debug\StateManager.pdb
